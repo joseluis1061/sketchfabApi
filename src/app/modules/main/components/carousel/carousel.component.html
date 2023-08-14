@@ -1,0 +1,10 @@
+<div class="carousel-container">
+  <carousel>
+    <slide *ngFor="let image of images; let index = index">
+      <a [routerLink]="['/model/', image.uid]">
+        <img [src]="image.thumbnail" alt="Image {{ index + 1 }}" />
+        <div class="carousel-caption">{{ image.name }}</div>
+      </a>
+    </slide>
+  </carousel>
+</div>

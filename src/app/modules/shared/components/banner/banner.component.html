@@ -1,0 +1,11 @@
+<div class="banner">
+  <div class="container">
+    <h1 class="logo-font">
+      {{title}}
+    </h1>
+    <div class="search" *ngIf="showSearch">
+      <a [routerLink]="['/search']">Search</a>
+    </div>
+
+  </div>
+</div>
